@@ -51,10 +51,28 @@ a {
 
 .brand {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 10px;
   min-width: 0;
   text-transform: uppercase;
+}
+
+.brand-logo {
+  width: clamp(88px, 10vw, 132px);
+  height: auto;
+  object-fit: contain;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .brand-mark {
@@ -116,7 +134,7 @@ dt,
   color: var(--white);
   background:
     linear-gradient(135deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.68)),
-    url("assets/hero-mountain.jpg") center / cover;
+    url("assets/Kette.jpg") center / cover;
 }
 
 .hero-media {
