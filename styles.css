@@ -263,7 +263,7 @@ h2 {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   border-top: 1px solid var(--black);
   border-bottom: 1px solid var(--black);
 }
@@ -318,9 +318,8 @@ h2 {
 }
 
 .contact-panel {
-  min-height: 420px;
+  min-height: 320px;
   padding: clamp(28px, 5vw, 56px);
-  border-right: 1px solid var(--black);
   background: var(--white);
 }
 
@@ -338,6 +337,12 @@ h2 {
   font-size: clamp(1.2rem, 2vw, 1.7rem);
   font-weight: 900;
   overflow-wrap: anywhere;
+}
+
+.contact-value a {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.14em;
 }
 
 .muted {
