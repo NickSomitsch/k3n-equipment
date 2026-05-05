@@ -1,15 +1,28 @@
-# k3n equipment landing page
+# k3n equipment
 
-Static coming-soon page for GitHub Pages.
+Static coming-soon website for **k3n equipment**, an outdoor sports accessories brand.
 
-## Publish on GitHub Pages
+The site is built with plain HTML and CSS and is intended to be published with GitHub Pages.
 
-1. Push this folder to a GitHub repository.
-2. In GitHub, open `Settings` -> `Pages`.
-3. Set the source to `Deploy from a branch`.
-4. Select the branch and `/root` as the folder.
+## Pages
 
-The home page entry point is `index.html`. The contact page is `contact.html`,
-and the simple legal/privacy page is `legal.html`.
+- `index.html` - landing page
+- `contact.html` - contact information
+- `legal.html` - legal notice and privacy information
+- `styles.css` - shared site styles
+- `favicon.ico` - browser icon
 
-The favicon is `favicon.ico` in the project root.
+## Assets
+
+Images and logo files are stored in `assets/`.
+
+Photo credits:
+
+- Hero image and urban image: Monja Kjosnes
+- Church image: Hendrik Rödel
+
+## Publishing
+
+This repository can be served directly through GitHub Pages from the repository root.
+
+Before publishing, make sure the legal notice contains the correct operator details for the website.
