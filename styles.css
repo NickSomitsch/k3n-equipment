@@ -108,6 +108,17 @@ dt,
   background: var(--black);
 }
 
+.page-hero {
+  min-height: min(700px, calc(100vh - 72px));
+  display: grid;
+  align-content: end;
+  padding: clamp(64px, 10vw, 124px) clamp(18px, 5vw, 72px);
+  color: var(--white);
+  background:
+    linear-gradient(135deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.68)),
+    url("assets/hero-mountain.jpg") center / cover;
+}
+
 .hero-media {
   position: absolute;
   inset: 0;
@@ -141,6 +152,10 @@ dt,
 }
 
 .hero .eyebrow {
+  color: #d0d0d0;
+}
+
+.page-hero .eyebrow {
   color: #d0d0d0;
 }
 
@@ -240,6 +255,51 @@ h2 {
   gap: clamp(28px, 5vw, 72px);
   padding: clamp(56px, 8vw, 108px) clamp(18px, 5vw, 72px);
   border-bottom: 1px solid var(--black);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+}
+
+.contact-panel {
+  min-height: 420px;
+  padding: clamp(28px, 5vw, 56px);
+  border-right: 1px solid var(--black);
+  background: var(--white);
+}
+
+.contact-panel:last-child {
+  border-right: 0;
+}
+
+.contact-panel h2 {
+  margin-bottom: 24px;
+  font-size: clamp(2.2rem, 5vw, 4.6rem);
+}
+
+.contact-value {
+  margin-bottom: 20px;
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  font-weight: 900;
+  overflow-wrap: anywhere;
+}
+
+.muted {
+  max-width: 420px;
+  color: var(--mid);
+}
+
+.contact-panel-dark {
+  color: var(--white);
+  background: var(--black);
+}
+
+.contact-panel-dark .eyebrow,
+.contact-panel-dark .muted {
+  color: #c9c9c9;
 }
 
 .section-heading {
@@ -377,6 +437,13 @@ dd {
   background: var(--black);
 }
 
+.footer-link {
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-bottom: 1px solid currentColor;
+}
+
 .site-footer p {
   margin-bottom: 0;
 }
@@ -429,8 +496,19 @@ dd {
 
   .status-grid,
   .notes,
-  .split-showcase {
+  .split-showcase,
+  .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-panel {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--black);
+  }
+
+  .contact-panel:last-child {
+    border-bottom: 0;
   }
 
   .image-block {
