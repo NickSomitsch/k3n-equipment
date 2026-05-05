@@ -9,4 +9,7 @@ Static coming-soon page for GitHub Pages.
 3. Set the source to `Deploy from a branch`.
 4. Select the branch and `/root` as the folder.
 
-The home page entry point is `index.html`. The contact page is `contact.html`.
+The home page entry point is `index.html`. The contact page is `contact.html`,
+and the simple legal/privacy page is `legal.html`.
+
+The favicon is `favicon.ico` in the project root.
