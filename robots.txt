@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://k3n-equipment.com/sitemap.xml
