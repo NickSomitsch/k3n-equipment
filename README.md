@@ -24,5 +24,3 @@ Photo credits:
 ## Publishing
 
 This repository can be served directly through GitHub Pages from the repository root.
-
-Before publishing, make sure the legal notice contains the correct operator details for the website.
